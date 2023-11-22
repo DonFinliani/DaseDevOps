@@ -58,10 +58,10 @@ jobs:
         with:
           local: ./dasedevops_spring_demo/docker-compose.yml
           remote: scp/devops_demo/docker-compose.yml
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.USER_PASSWORD }}
-          port: ${{ secrets.PORT }}
+          host: 113.31.145.172
+          username: root
+          password: Zjm021017
+          port: 22
  
   depoly:
     needs: [ build ]
