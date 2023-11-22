@@ -71,10 +71,10 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: 113.31.145.172
           username: root
           password: Zjm021017
-          port: ${{ secrets.PORT }}
+          port: 22
           script: |
             docker-compose -f scp/devops_demo/docker-compose.yml up -d
             docker-compose -f scp/devops_demo/docker-compose.yml stop
