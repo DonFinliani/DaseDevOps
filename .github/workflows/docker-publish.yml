@@ -72,8 +72,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.USER_PASSWORD }}
+          username: root
+          password: Zjm021017
           port: ${{ secrets.PORT }}
           script: |
             docker-compose -f scp/devops_demo/docker-compose.yml up -d
