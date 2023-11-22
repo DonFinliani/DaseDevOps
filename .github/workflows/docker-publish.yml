@@ -36,8 +36,8 @@ jobs:
         with:
           login-server: https://registry.cn-shanghai.aliyuncs.com
           region-id: cn-shanghai  # 3
-          username: "${{ secrets.ACR_USERNAME }}"
-          password: "${{ secrets.ACR_PASSWORD }}"
+          username: "aliyun2473977767"
+          password: "Zjm021017"
       - name: Build and push image
         run: |
           docker build -t registry.cn-shanghai.aliyuncs.com/zjm_namespace/$MODULE_1:latest ./dasedevops_spring_demo/$MODULE_1
